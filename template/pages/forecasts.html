@@ -1,64 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Previsões</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../assets/style.css" />
+  </head>
+  <body class="forecast_wrapper">
+    <header>
+      <div class="filter_wrapper">
+        <input type="datetime-local" id="datetime" name="datetime" />
+        <input
+          type="text"
+          id="city_name"
+          name="city_name"
+          placeholder="Cidade"
+        />
+        <button type="submit"><a href="./post_forecast.html">+</a></button>
+      </div>
+      <nav class="account_settings">
+        <span><a href="./users.html">Usuários</a></span>
+        <span><a href="./my_account.html">Minha contato</a></span>
+        <span><a href="../index.html">Sair</a></span>
+      </nav>
+    </header>
 
-</head>
-<body>
-    <div class="forecast_wrapper">
-        <h2>Veja as previsões que desejar!</h2>
-        <a href="./users.html"><p>Controlar usuário</p></a>
-        <a href="./my_account.html"><p>Minha contato</p></a>
-        <a href="./index.html"><p>Sair</p></a>
-        
-
-        <div class="filter_group">
-            <label for="datetime">Filtrar:</label>
-            <input type="datetime-local" id="datetime" name="datetime">
+    <main>
+      <div class="weather_info">
+        <header class="header_forecast_today">
+          <p>2024-02-01 12:00</p>
+          <span>
+            <button>Editar</button>
+            <button>Deletar</button>
+          </span>
+        </header>
+        <div class="header_temperature_wrapper">
+          <span class="weather_condition"><p>Ensolarado</p></span>
+          <span><p>50 °C</p></span>
         </div>
         <div>
-            <a href="./post_forecast.html"><p>Adicionar previsões</p></a>
+          <p>Pressão Atmosférica: 1012 hPa</p>
+          <p>Umidade: 60%</p>
+          <p>Precipitação: 20%</p>
         </div>
-
-        <div class="weather_info">
-         
-            <div>
-              <label>Data e Hora:</label>
-              <span>2024-02-01 12:00</span>
-            </div>
-            <div>
-              <label>Temperatura:</label>
-              <span>25°C</span>
-            </div>
-            <div>
-              <label>Pressão Atmosférica:</label>
-              <span>1012 hPa</span>
-            </div>
-            <div>
-              <label>Umidade:</label>
-              <span>60%</span>
-            </div>
-            <div>
-              <label>Precipitação:</label>
-              <span>20%</span>
-            </div>
-            <div>
-              <label>Condição do Tempo:</label>
-              <span>Ensolarado</span>
-            </div>
-            <div>
-                <button>Deletar</button>
-                <button>Editar</button>
-            </div>
-          </div>
-        </div>
-
-        
-
-    </div>
-    
-</body>
+      </div>
+    </main>
+  </body>
 </html>
