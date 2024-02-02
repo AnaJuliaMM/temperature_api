@@ -147,6 +147,7 @@ header button {
   justify-content: center;
 
   padding: 10px;
+  min-width: fit-content;
   width: 35px;
 
   border-radius: 5px;
@@ -157,7 +158,8 @@ header button {
   transition: color 0.5 ease;
   cursor: pointer;
 }
-header button:hover {
+header button:hover,
+.button_edit_delete button {
   opacity: 0.85;
 }
 .weather_today {
@@ -203,7 +205,6 @@ header button:hover {
   display: flex;
   flex-direction: column;
 }
-
 .forecast_list {
   display: flex;
   flex-direction: column;
@@ -237,6 +238,26 @@ header button:hover {
   justify-content: space-between;
   height: 100%;
 }
+.button_edit_delete {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 5px;
+}
+.button_edit_delete button {
+  border-radius: 5px;
+  border: none;
+  background-color: #3474ecef;
+  color: #e7e7e7;
+  padding: 5px;
+
+  transition: color 0.5 ease;
+  cursor: pointer;
+}
+.button_edit_delete button:hover {
+  opacity: 0.85;
+}
+
 /* Estilos para telas grandes (desktop, tablet) */
 @media (min-width: 768px) {
 }
