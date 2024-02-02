@@ -7,3 +7,4 @@ class TemperatureForecast(models.Model):
     humidity = models.FloatField()
     precipitation_percentage = models.FloatField()
     weather_conditions = models.CharField(max_length=150)
+    date_tiime = models.DateTimeField()
