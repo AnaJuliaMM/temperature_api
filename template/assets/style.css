@@ -217,7 +217,8 @@ header button:hover,
 
   color: #d3d2d2;
 }
-.weather_forecast {
+.weather_forecast,
+.user_card {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -244,7 +245,8 @@ header button:hover,
   height: 100%;
   gap: 5px;
 }
-.button_edit_delete button {
+.button_edit_delete button,
+.button_wrapper button {
   border-radius: 5px;
   border: none;
   background-color: #3474ecef;
@@ -256,6 +258,23 @@ header button:hover,
 }
 .button_edit_delete button:hover {
   opacity: 0.85;
+}
+body h2 {
+  text-align: center;
+}
+.user_card {
+  width: 50vw;
+}
+.header_user {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.header_user nav {
+  display: flex;
+  justify-content: right;
+  width: 100%;
 }
 
 /* Estilos para telas grandes (desktop, tablet) */

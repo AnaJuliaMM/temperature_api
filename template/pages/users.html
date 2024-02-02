@@ -1,40 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Previsões</title>
     <link rel="stylesheet" href="../assets/style.css" />
+  </head>
+  <body>
+    <header class="header_user">
+      <nav>
+        <a href="./forecasts.html" class="home_link"><p>Ver previsões</p></a>
+      </nav>
+      <h2>Usuários</h2>
+    </header>
 
-</head>
-<body>
-    <div class="forecast_wrapper">
-        <h2>Usuários</h2>
-
+    <main class="users_list">
+      <div class="user_card">
         <div>
-            <a href="./forecasts.html"><p>Home</p></a>
+          <label>Nome completo:</label>
+          <span>John Doe</span>
+        </div>
+        <div>
+          <label>E-mail:</label>
+          <span>john.doe@example.com</span>
         </div>
 
-        <div class="weather_info">
-            <div>
-                <label>Nome completo:</label>
-                <span>John Doe</span>
-              </div>
-              <div>
-                <label>E-mail:</label>
-                <span>john.doe@example.com</span>
-              </div>
-
-            <div>
-                <button>Deletar</button>
-                <button>Editar</button>
-            </div>
-          </div>
+        <div class="button_wrapper">
+          <button>Editar</button>
+          <button>Deletar</button>
         </div>
-
-        
-
-    </div>
-    
-</body>
+      </div>
+    </main>
+  </body>
 </html>
