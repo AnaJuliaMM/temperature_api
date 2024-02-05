@@ -297,6 +297,7 @@ body h2 {
   }
   header {
     flex-direction: column;
+    gap: 20px;
   }
   .filter_wrapper {
     display: flex;
@@ -306,5 +307,25 @@ body h2 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-top: 10px;
     font-size: 0.95rem;
+  }
+  .main_forecast_mobile {
+    flex-direction: column;
+  }
+  .weather_today {
+    width: 80%;
+    padding: 15px;
+  }
+  .header_forecast_today {
+    flex-direction: row;
+  }
+  .forecast_list {
+    width: 100%;
+  }
+  .user_card {
+    width: 100%;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+    background-color: #031757d9;
   }
 }
