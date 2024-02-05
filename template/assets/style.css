@@ -236,7 +236,7 @@ header button:hover,
 .data_condition {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 10px;
   height: 100%;
 }
 .button_edit_delete {
