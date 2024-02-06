@@ -8,7 +8,6 @@ from .serializer import TemperatureForecastSerializer
 #     queryset = TemperatureForecast.objects.all()
 #     serializer_class = TemperatureForecastSerializer
 
+# View to render forecast list page
 def index(request):
-    latest_question_list = TemperatureForecast.objects.all()
-    context = {"latest_question_list": latest_question_list}
-    return render(request, "api/index.html", context)
+    return render(request, "api/forecasts.html")
