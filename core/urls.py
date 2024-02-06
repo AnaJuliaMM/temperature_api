@@ -19,10 +19,9 @@ from django.urls import path, include
 from rest_framework.routers import DefaultRouter
 from api.views import TemperatureForecastViewset
 
-router = DefaultRouter()
-router.register('', TemperatureForecastViewset)
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include(router.urls))
+    path('api/', include('api.urls'))
 ]
