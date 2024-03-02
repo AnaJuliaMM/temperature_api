@@ -17,5 +17,5 @@ class WeatherView(views.View):
                     temperature=randrange(start=17, stop=40),
                     date_time=datetime.now()
                 ))
-        return render(request, "api/forecasts.html")
+        return render(request, "api/forecasts.html", {"weathers": weathers})
 
