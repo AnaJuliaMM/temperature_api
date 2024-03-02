@@ -1,7 +1,7 @@
 from rest_framework import serializers
-from .models import TemperatureForecast
+from .models import WeatherEntity
 
 class TemperatureForecastSerializer(serializers.ModelSerializer):
     class Meta:
-        model = TemperatureForecast
+        model = WeatherEntity
         fields = '__all__'
