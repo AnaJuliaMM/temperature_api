@@ -46,22 +46,24 @@
         </div>
       </div>
       <div class="forecast_list">
-        <div class="weather_forecast">
-          <div class="data_condition">
-            <span class="header_forecast">2024-02-01 12:00</span>
-            <span>Ensolarado</span>
+        {% for weather in weathers %}    
+          <div class="weather_forecast">
+            <div class="data_condition">
+              <span class="header_forecast">{{ weather.date_time }}</span>
+              <span>Ensolarado</span>
+            </div>
+            <div class="infos">
+              <span>Pressão Atmosférica: 1012 hPa</span>
+              <span>Umidade: 60%</span>
+              <span>Precipitação: 20%</span>
+            </div>
+            <span class="temperature"><p>{{ weather.temperature }}</p></span>
+            <div class="button_edit_delete">
+              <button>Editar</button>
+              <button>Deletar</button>
+            </div>
           </div>
-          <div class="infos">
-            <span>Pressão Atmosférica: 1012 hPa</span>
-            <span>Umidade: 60%</span>
-            <span>Precipitação: 20%</span>
-          </div>
-          <span class="temperature"><p>50 °C</p></span>
-          <div class="button_edit_delete">
-            <button>Editar</button>
-            <button>Deletar</button>
-          </div>
-        </div>
+        {% endfor %}
 
         <div class="weather_forecast">
           <div class="data_condition">
@@ -113,8 +115,6 @@
             <button>Deletar</button>
           </div>
         </div>
-
-   
       </div>
     </main>
   </body>
